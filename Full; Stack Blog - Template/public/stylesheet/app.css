@@ -1,0 +1,17 @@
+i.icon{
+	font-size:1.25rem;
+	font-weight:100;
+}
+.container.main{
+	margin-top: 7em;
+}
+a{
+	transition: .25s;
+	opacity:0.6;
+	
+}
+a:hover{
+		opacity:1;
+}
+
+	
