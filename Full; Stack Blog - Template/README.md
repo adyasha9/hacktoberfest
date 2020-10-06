@@ -4,6 +4,6 @@ The CSS framework used was Semantic UI as it provides a different and unique loo
 
 ## How to use?
 Download the repo and using CMD just type 
-    node app.js
+    `node app.js`
 After that in your Browser type
   https://localhost:<PORT NUMBER>
