@@ -1,0 +1,24 @@
+<%- include("partials/header")%>
+
+	<% bp.forEach((bg)=>{ %>
+
+
+	
+		<div class="ui main segment container text">	
+			<h2>
+				<%= bg.title %>
+			</h2>
+			
+			<img class="ui centered image"src=<%=bg.img %>>
+			<span><%= bg.date%></span>
+			<p>
+				<%= bg.body.substring(0,35)%><span>...</span>
+				<a href="/blogs/<%= bg.id%>">Read More</a>
+			</p>
+			
+		</div>
+	<% }) %>
+
+
+
+<%- include("partials/footer.ejs")%>

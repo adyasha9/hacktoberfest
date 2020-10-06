@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs")%>
+<div class="ui main segment text container">
+	<h1 class="header huge">
+		<%= bgp.title %>
+	</h1>
+	<div class="ui top attached ">
+		<div class="item">
+			<img class="ui centered rounded image" src=<%= bgp.img %>>
+			<div class="content">
+			<span>Date: <%= bgp.date.toDateString() %></span>
+			</div>
+			<div class="description">
+					<p><%- bgp.body %></p>
+			
+			</div>
+			<div clas="item">
+			<a href="/blogs/<%= bgp.id%>/update"><div class="ui animated button primary" tabindex="0">
+  <div class="visible content">Update</div>
+  <div class="hidden content">
+    <i class="sync icon"></i>
+  </div>
+</div></a>
+	</div>
+		</div>
+		</div>
+	<form method="POST" action="/blogs/<%=bgp._id%>/?_method=DELETE">
+	<button class="ui basic button red">
+		Delete
+		</button>
+		
+</form>	
+		</div>
+
+<%- include("partials/footer.ejs")%>
