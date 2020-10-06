@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS + CSS Clock</title>
+</head>
+<body>
+
+
+    <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    </div>
+
+
+  <style>
+    html {
+      background: #F58A07;
+      background-size: cover;
+      font-family: 'helvetica neue';
+      text-align: center;
+      font-size: 10px;
+    }
+
+    body {
+      margin: 0;
+      font-size: 2rem;
+      display: flex;
+      flex: 1;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    .clock {
+      width: 30rem;
+      height: 30rem;
+      border: 20px solid #909CC2;
+      border-radius: 50%;
+      margin: 50px auto;
+      position: relative;
+      padding: 2rem;
+      background: url(https://www.stampsdirect.co.uk/media/product/96d/clock-face-self-inking-stamp-56c.png);
+      background-size: 414px;
+      background-position-x: -36px;
+      background-position-y: -42px;
+      box-shadow:
+        0 0 0 4px black,
+        inset 0 0 0 3px black,
+        inset 0 0 10px black,
+        0 0 10px black;
+    }
+
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px); /* account for the height of the clock hands */
+    }
+
+    .hand {
+      width: 50%;
+      height: 6px;
+      background: black;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+
+  </style>
+
+  <script>
+    const secondHand = document.querySelector('.second-hand');
+    const minsHand = document.querySelector('.min-hand');
+    const hoursHand = document.querySelector('.hour-hand');
+    function setDate() {
+
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const secondsDegrees = ((seconds / 60) * 360) + 90;
+      secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+      console.log(seconds);
+
+      const mins = now.getMinutes();
+      const minsDegrees = ((mins / 60) *360) + 90;
+      minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+
+
+      const hours = now.getHours();
+      const hoursDegrees = ((hours / 12) *360) + 90;
+      hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
+      
+
+    }
+    setInterval(setDate, 1000);
+
+  </script>
+</body>
+</html>
