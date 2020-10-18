@@ -1,0 +1,149 @@
+{
+  "main": {
+    "name": "Nikhil Upadhyay",
+    "description": "Full Stack React Developer and also I do some Game Development in Unity",
+    "image": "jerry.jpg",
+    "bio": "My name is Nikhil, I'm a Computer Science Student currently studying Masters in Computer Science in Aligarh Muslim University ",
+    "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
+    "email": "nikhil9690@gmail.com",
+    "phone": "+91 925 843 3304",
+    "address": {
+      "street": "Christian Colony",
+      "city": "Aligarh",
+      "state": "Uttar Pradesh",
+      "zip": "202001",
+      "country": "India"
+    },
+    "website": "http://www.timbakerdev.com",
+    "resumedownload": "https://drive.google.com/file/d/1B0nmMBHjc5phKFsz9xZvXgbh6HaaWfk-/view?usp=sharing",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/nikhil.upadhyay.940",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/nikhil-upadhyay-166673150/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/_jerry.exe_/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/jerrycode06",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here is my short visualization of skills",
+    "education": [
+      {
+        "school": "Aligarh Muslim University",
+        "degree": "Masters in Computer Science and Applications",
+        "graduated": "Pursuing",
+        "description": "Have Done Graduation in Physics"
+      }
+    ],
+    "work": [
+      {
+        "company": "AMUHacks 1.0",
+        "title": "Mentor in Website Development",
+        "years": "September 2020",
+        "description": "Serve as a mentor on website development in a Hackathon to guide participants who are working on Web Development Projects."
+      },
+      {
+        "company": "HackAMU 2.0",
+        "title": "Team Leader && Front-End & Python Developer",
+        "years": "April 2020",
+        "description": "Built a project in a hackathon called *COVID-19 Engine* with other team members, a web application with some machine learning implementation and a notification system for updating Corona cases in area and finished in Top-10."
+      },
+      {
+        "company": "HackCBS 2.0",
+        "title": "Team-Member && Front-End Developer",
+        "years": "Oct 2019",
+        "description": "Participated in a Asia-Level Hackathon organized by MLH (Major League Hacking) and Built a project *JoyCode* with other team members, a website which is used to teach code to kids (age 8-14)."
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "80%"
+      },
+      {
+        "name": "NodeJS & ExpressJS",
+        "level": "80%"
+      },
+      {
+        "name": "CSS",
+        "level": "95%"
+      },
+      {
+        "name": "Git",
+        "level": "95%"
+      },
+      {
+        "name": "C++",
+        "level": "75%"
+      },
+      {
+        "name": "Python",
+        "level": "85%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "70%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "HaSa - A Depression Detection App",
+        "category": "Depression Detection Web-App with some ML integration with Flask",
+        "image": "HaSa-img.png",
+        "url": "https://hasa-scripthon.herokuapp.com/"
+      },
+      {
+        "title": "NodeJS Authentication App",
+        "category": "Authentication System built with NodeJS, PassportJs and MongoDB",
+        "image": "auth-app.jpg",
+        "url": "https://github.com/jerrycode06/Node_Passport_Auth"
+      },
+      {
+        "title": "Netflix Landing Page",
+        "category": "Netflix Landing Page built with HTML,CSS & JS",
+        "image": "netflix-ui.jpg",
+        "url": "https://net-flix-clone.netlify.app/"
+      },
+      {
+        "title": "Covid-19 Engine",
+        "category": "A WebApp made during Hackathon with other team members",
+        "image": "covid-engine.png",
+        "url": "https://github.com/Saarge-z/HackathonAMU-2.0"
+      },
+      {
+        "title": "Amazon Clone",
+        "category": "Amazone Clone built with ReactJS",
+        "image": "amazon-clone.jpg",
+        "url": "https://clone-3349b.web.app"
+      }
+    ]
+  },
+  "inspiration": {
+    "inspiration": [
+      {
+        "text": "When something is important enough, you do it even if the odds are not in your favor.",
+        "user": "Elon Musk"
+      },
+      {
+        "text": "The important thing is not to stop questioning, Curiosity has its own reason for existence. I have no special talent. I am only passionately curious.",
+        "user": "Albert Einstein"
+      }
+    ]
+  }
+}
