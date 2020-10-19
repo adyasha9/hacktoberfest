@@ -1,0 +1,29 @@
+.todo__list {
+    text-align: center;
+    background: #48bfe3;
+    margin: 10px 0px!important; 
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px!important;
+} 
+ 
+.todo__edit {
+    color: #ffba08;  
+  }
+  .todo__delete {
+    color: #e71d36; 
+  } 
+  .todo__avatar {
+    color: #eeef20;
+  }
+  .modal__form {
+      display: flex;
+      align-items: center;
+  }
+  .modal__input { 
+      flex: 0.7;
+      margin-right: 10px;
+  }
+  .modal__form button {
+      flex: 0.3;
+  }
