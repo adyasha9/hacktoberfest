@@ -1,0 +1,128 @@
+body {
+    overflow-x: hidden;
+}
+
+.overlay__img {
+    position: absolute;
+    width: 1518px;
+    height: 862px;
+    top: -2px;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+
+.overlay__title {
+    position: absolute;
+    width: 383px;
+    height: 96px;
+    left: 151px;
+    top: 246px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 96px;
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.overlay__text {
+    position: absolute;
+    width: 611px;
+    height: 64px;
+    left: 151px;
+    top: 366px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.homedecor {
+    position: absolute;
+    left: 10.42%;
+    right: 83.61%;
+    top: 7.71%;
+    bottom: 10.71%;
+}
+
+.search {
+    position: absolute;
+    left: 65.65%;
+    right: 29.75%;
+    top: 7.71%;
+    bottom: 44.12%;
+    color: #FFFFFF;
+}
+
+.search_text {
+    position: absolute;
+    left: 67.92%;
+    right: 25.35%;
+    top: 5.71%;
+    bottom: 28.57%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    /* identical to box height, or 186% */
+    color: #FFFFFF;
+}
+
+.help {
+    position: absolute;
+    left: 76.22%;
+    right: 20.42%;
+    top: 5.71%;
+    bottom: 28.57%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    /* identical to box height, or 186% */
+    color: #FFFFFF;
+}
+
+.account {
+    position: absolute;
+    left: 82.36%;
+    right: 13.96%;
+    top: 5.71%;
+    bottom: 28.57%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    /* identical to box height, or 186% */
+    color: #FFFFFF;
+}
+
+.vector {
+    position: absolute;
+    left: 87.49%;
+    right: 24.59%;
+    top: 7.71%;
+    bottom: 19.58%;
+    color: #FFFFFF;
+}
+
+.page_text {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
