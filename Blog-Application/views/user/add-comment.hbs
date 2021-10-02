@@ -1,0 +1,46 @@
+
+{{# each items}}
+<div class="w3-container" style="margin-top:70px">
+{{# each this}}
+  <div class="w3-card-4" style="width:70%">
+    <header class="w3-container w3-light-grey header">
+        <img class="img-responsive" src="" alt="">
+        <i class="fa fa-user" aria-hidden="true"></i> &nbsp; <b>{{this.postedBy}}</b>
+        
+    </header>
+    <div class="w3-container content">
+      <p>{{this.text}}</p><br>
+       <img class="img-responsive" src={{ this.photo }} alt="">
+    </div>
+    <footer class="w3-container w3-light-grey footer">
+      <i class="fa fa-thumbs-o-up heart" like-id="{{this._id}}" >{{this.likes.length}} </i> 
+            &nbsp;
+            &nbsp;
+   <i class="fa fa-comment-o" aria-hidden="true"></i>
+    {{this.comments.length}}<br><br>
+    {{# each comments}}
+    <div  class="w3-container content" class="commentBox">
+    <i class="fa fa-user" aria-hidden="true"></i>
+     {{#each this}}
+
+           <b>{{this.postedBy}} </b>
+           {{this.text}}
+     {{/each}}
+     </div>
+    {{/each}}
+     </footer>
+  </div>
+  <br>
+{{/each}}
+</div>
+{{/each}}
+ <form method="POST" action="/user/add-comment" style="width:70%">
+            <div class="form-group">
+                <label for="text" ></label>
+                <br>
+                <input type="text" id="text" placeholder="Add a comment" name="Text" class="form-control"autocomplete="off" required>
+            </div>
+            <input type="hidden" name="id" value={{id}}>
+            <input type="hidden" name="_csrf"  value="{{csrfToken}}">
+            <button id="btnAddPost"  type="submit" class="btn btn-primary">Add</button>
+    </form>
