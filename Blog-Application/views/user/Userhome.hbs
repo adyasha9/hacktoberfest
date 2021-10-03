@@ -1,0 +1,43 @@
+
+{{# each items}}
+<div class="w3-container" style="margin-top:70px">
+{{# each this}}
+  <div class="w3-card-4" style="width:70%;margin-left:15%">
+    <header class="w3-container w3-light-grey header">
+        <img class="img-responsive" src="" alt="">
+        <i class="fa fa-user" aria-hidden="true"></i> &nbsp; <b>{{this.postedBy}}</b>
+         <span style="float: right;">{{this.created}}</span>
+    </header>
+    <div class="w3-container content">
+      <p>{{this.text}}</p><br>
+      <img class="img-responsive" src={{ this.photo }} alt="">
+    </div>
+    <footer class="w3-container w3-light-grey footer">
+       <i class="fa fa-thumbs-o-up heart" like-id="{{this._id}}" >{{this.likes.length}} </i> 
+        
+       <!-- <span id="heart" onclick="window.location.href='/user/like/{{this._id}}'" >
+       <i id="h" class="fa fa-heart-o"  ></i>
+       </span>  -->
+      
+  
+      &nbsp;
+      &nbsp;
+     <i class="fa fa-comment-o" aria-hidden="true"></i>
+    {{this.comments.length}}<br><br>
+    {{# each comments}}
+    <div  class="w3-container content" class="commentBox">
+    <i class="fa fa-user" aria-hidden="true"></i>
+     {{#each this}}
+
+           <b>{{this.postedBy}} </b>
+           {{this.text}}
+     {{/each}}
+     </div>
+    {{/each}}
+    <a href="/user/add-comment/{{ this._id }}" class="btn btn-primarypull-right" role="button">Add Comment </a>
+     </footer>
+  </div>
+  <br>
+{{/each}}
+</div>
+{{/each}}
